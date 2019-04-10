@@ -2,26 +2,23 @@
     background-image: url("../Images/gas_station.jpg");
 }
 
-.card-img {
+.pic-img {
     width: 250px;
     height: 250;
-    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
     vertical-align: middle;
-    border: none;
-
+    opacity: 0.7;
 }
 
-.card-text {
-    position: relative;
+.pic-text {
     color: orange;
-    text-emphasis: 
-
+    font-size: 2em;
+    text-align: center;
 }
 
-.card {
+.pic {
     display: inline-block;
 }
 
@@ -29,6 +26,11 @@
     padding: 20px;
     margin-left: 30%;
     margin-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+#mapid { 
+    height: 300px; 
+    width: 300px;
 }
 
