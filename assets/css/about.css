@@ -1,0 +1,11 @@
+#modal-header {
+    background-image: url("../Images/pump_atstation.png");
+    height: 150px;
+    width: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+body {
+    background-image: url("../Images/gas_station.jpg");
+}
