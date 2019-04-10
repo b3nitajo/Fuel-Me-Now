@@ -184,6 +184,24 @@ crossorigin=""></script>
 
   <!-- Linking to our JavaScript file. -->
   <script type="text/javascript" src="assets/javascript/about.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  // //CORS policy override
+  // jQuery.ajaxPrefilter(function(options) {
+  //   if (options.crossDomain && jQuery.support.cors) {
+  //       options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+  //   }
+  // });
+
+  $(document).ready(function(){
+    $(".startButton").on("click", function(){
+      var createiFrame = $('<iframe>');
+        createiFrame.attr('src="thankYou.html"');
+     $("#startModalCenterTitle").append(createiFrame);
+    });
+  });
+  
+  </script>
 </body>
 
 </html>
