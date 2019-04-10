@@ -1,5 +1,13 @@
 body {
-    background-image: url(assets/user.css);
+    background-image: url("../Images/street_03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container-2 {
+    background-color: white;
+    margin: 200px;
+    padding: 25px;
+    
+    
 }
