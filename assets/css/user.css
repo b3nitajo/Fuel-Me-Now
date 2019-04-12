@@ -11,3 +11,36 @@ body {
     
     
 }
+
+.resultContainer{
+    width: 700px;
+    margin: auto;
+  }
+
+.results_0{
+    border:2px solid #d16d1d;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+  .results_1{
+    border:2px solid #d16d1d;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+  .results_2{
+    border:2px solid #d16d1d;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+.resultImages{
+    height: 200px;
+    width: 200px;
+}
+
+.resultsHeader{
+    color: #FFF;
+    margin-bottom: 50px;
+}
