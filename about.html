@@ -1,106 +1,207 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    
-    <link rel="stylesheet" href="assets/css/about.css">
-    <title>Fuel me Now</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- reset css -->
+  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap links -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
+    <!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
+    <!-- crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  
+  
+  
+  
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="assets/css/about.css">
+  <title>Fuel me Now</title>
 </head>
+
 <body>
-<!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="assets/Images/image_from_ios.jpg" width="300px" height="50px" class="d-inline-block align-top" alt="">
-    </a>
-</nav>
-    
-<!-- Button trigger modal -->
-<button type="button" class="aboutButton" data-toggle="modal" data-target="#aboutModalCenter">
-        Our Story
-</button>
-      
-<!-- About-->
-<div class="modal fade" id="aboutModalCenter" tabindex="-1" role="dialog" aria-labelledby="aboutModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title" id="aboutModalCenterTitle">Our Story</p>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+
+  <!-- Logo Header -->
+  <div class="container">
+      <div class="logo">
+        <img src="assets/Images/fuelmenow.png" width="350px" height="100px" class="d-inline-block align-top"
+          alt="">
       </div>
-      <div class="aboutModalBody">
-            Ever heard of UberEats or GrubHub.  Well we are the delivery service for your vehicle.  Never stress about having to stop for gas again.  It is now as easy as entering your information and ordering your ride some fuel, we will take care of the rest.  Initially we started as a group project for a coding bootcamp assignment, and 
-            now we are here for you to keep you on schedule.  Never show up late to your appointments, and say good-bye to the days of missing important events due to stopping for gas.  Can you Fuel me now?
+  </div>
+
+  <div class="container">
+      <form>
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state">
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="zip">Zip</label>
+                    <input type="text" class="form-control" id="zip">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+              </form>
+          </div>
+
+
+
+
+
+
+  <!-- Main Content-->
+  <div class="container">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4">
+        <div class="pic">
+          <!-- data-toggle="modal" data-target="#aboutModalCenter"> -->
+          <img class="pic-img" src="assets/Images/pump_atstation.png">
+          <a href="user.html" class="pic-text">Our Story</a>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      <!-- Get Stated -->
+      <div class="col-md-4">
+        <div class="pic" data-toggle="modal" data-target="#startModalCenter">
+          <img class="pic-img" src="assets/Images/orange_pump.png">
+          <p class="pic-text">Get Started</p>
+        </div>
+      </div>
+      <!-- Testimonial -->
+      <div class="col-md-4">
+        <div class="pic" data-toggle="modal" data-target="#testModalCenter">
+          <img class="pic-img" src="assets/Images/street_03.jpg">
+          <p class="pic-text">Testimonials</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<br>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+crossorigin=""></script>
 
-<!-- Button trigger modal -->
-<button type="button" class="startButton" data-toggle="modal" data-target="#startModalCenter">
-    Get Started
-</button>
+<!-- map -->
+  <div id="mapid"></div>
 
-<!-- Get Started -->
-<div class="modal fade" id="startModalCenter" tabindex="-1" role="dialog" aria-labelledby="startModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title" id="startModalCenterTitle">Get Started</p>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="startModalBody">
-          <a href ="..test.html"></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
 
-<!-- Button trigger modal -->
-<button type="button" class="testimonialButton" data-toggle="modal" data-target="#testModalCenter">
-    Testimonials
-</button>
-<!-- Testimonials -->
-<div class="modal fade" id="testModalCenter" tabindex="-1" role="dialog" aria-labelledby="testModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title" id="testModalCenterTitle">Testimonials</p>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+<!-- About Modal-->
+<!-- <div class="modal fade" id="aboutModalCenter" tabindex="-1" role="dialog" aria-labelledby="aboutModalCenterTitle" aria-hidden="true"> -->
+  <!-- <div class="modal-dialog modal-dialog-centered" role="document"> -->
+    <!-- <div class="modal-content"> -->
+      <!-- <div class="modal-header"> -->
+        <!-- <p class="modal-title" id="aboutModalCenterTitle">Our Story</p> -->
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <span aria-hidden="true">&times;</span> -->
+        <!-- </button> -->
+      <!-- </div> -->
+      <!-- <div class="aboutModalBody"> -->
+        <!-- Ever heard of UberEats or GrubHub. Well we are the delivery service for your vehicle. Never stress -->
+        <!-- about -->
+        <!-- having to stop for gas again. It is now as easy as entering your information and ordering your -->
+        <!-- ride some -->
+        <!-- fuel, we will take care of the rest. Initially we started as a group project for a coding bootcamp -->
+        <!-- assignment, and -->
+        <!-- now we are here for you to keep you on schedule. Never show up late to your appointments, and say -->
+        <!-- good-bye to the days of missing important events due to stopping for gas. Can you Fuel me now? -->
+      <!-- </div> -->
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+<!-- Get Started Modal -->
+<!-- <div class="modal fade" id="startModalCenter" tabindex="-1" role="dialog" aria-labelledby="startModalCenterTitle" aria-hidden="true"> -->
+  <!-- <div class="modal-dialog modal-dialog-centered" role="document"> -->
+    <!-- <div class="modal-content"> -->
+      <!-- <div class="modal-header"> -->
+        <!-- <p class="modal-title" id="startModalCenterTitle">Get Started</p> -->
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <span aria-hidden="true">&times;</span> -->
+        <!-- </button> -->
+      <!-- </div> -->
+      <!-- <div class="startModalBody"> -->
+      <!-- </div> -->
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+<!-- Testimonials Modal -->
+<!-- <div class="modal fade" id="testModalCenter" tabindex="-1" role="dialog" aria-labelledby="testModalCenterTitle" aria-hidden="true"> -->
+  <!-- <div class="modal-dialog modal-dialog-centered" role="document"> -->
+    <!-- <div class="modal-content"> -->
+      <!-- <div class="modal-header"> -->
+        <!-- <p class="modal-title" id="testModalCenterTitle">Testimonials</p> -->
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <span aria-hidden="true">&times;</span> -->
+        <!-- </button> -->
+      <!-- </div> -->
+      <!-- <div class="modal-body"> -->
+      <!-- </div> -->
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+
 
   <!-- Linking to our JavaScript file. -->
   <script type="text/javascript" src="assets/javascript/about.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  // //CORS policy override
+  // jQuery.ajaxPrefilter(function(options) {
+  //   if (options.crossDomain && jQuery.support.cors) {
+  //       options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+  //   }
+  // });
+
+  $(document).ready(function(){
+    $(".startButton").on("click", function(){
+      var createiFrame = $('<iframe>');
+        createiFrame.attr('src="thankYou.html"');
+     $("#startModalCenterTitle").append(createiFrame);
+    });
+  });
+  
+  </script>
 </body>
+
 </html>
