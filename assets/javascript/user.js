@@ -18,6 +18,34 @@ var config = {
       email: {
         email: true,
         required: true
+      },
+      phone: {
+          phone: true,
+          required: true,
+      },
+      city: {
+          city: true,
+          required: true,
+      },
+      state: {
+          state: true,
+          required: true,
+      },
+      zip: {
+          zip: true,
+          required: true,
+      },
+      make: {
+          make: true,
+          required: true,
+      },
+      model: {
+          model: true,
+          required: true,
+      },
+      year: {
+          year: true,
+          required: true,
       }
     },
     messages: {
@@ -25,7 +53,29 @@ var config = {
       email: {
         required: 'Please enter an email',
         email: 'Please enter a valild email'
+      },
+      phone: {
+          phone: 'please enter a phone number'
+      },
+      city: {
+          city: 'please enter your city'
+      },
+      state: {
+          state: 'please enter your state'
+      },
+      zip: {
+          zip: 'please enter your zip'
+      },
+      make: {
+          make: 'please enter the make of your vehicle'
+      },
+      model: {
+          model: 'please enter the model of your vehicle'
+      },
+      year: {
+          year: 'please enter the year your vehicle was made'
       }
+
     },
     submitHandler: function () {
       var name = $("#name").val().trim();
