@@ -1,20 +1,28 @@
- // Initialize Firebase
- var config = {
+// Initialize Firebase
+var config = {
     apiKey: "AIzaSyD6i9sXtbQF3nanM4Zfel4n1rvtX_DbQ-M",
     authDomain: "fuel-me-now.firebaseapp.com",
     databaseURL: "https://fuel-me-now.firebaseio.com",
     projectId: "fuel-me-now",
     storageBucket: "fuel-me-now.appspot.com",
     messagingSenderId: "523223148867"
-  };
- 
-  firebase.initializeApp(config);
+};
 
-  var database = firebase.database();
+firebase.initializeApp(config);
 
-  $("#submitButton").on("click", function(event){
+var database = firebase.database();
+
+
+
+
+
+$("#submitButton").on("click", function(event){
     event.preventDefault();
 
+    console.log('we prevented the default');
+
+   
+    
     var name = $("#name").val().trim();
     var email = $("#email").val().trim();
     var phone = $("#phoneNumber").val().trim();
@@ -28,40 +36,46 @@
     var year = $("#year").val().trim();
     var comments = $("#comments").val().trim();
     
-    
-    var newUser = {
-  
-      name: name,
-      email: email,
-      phone: phone,
-      address: address,
-      addressTwo: addressTwo,
-      city: city,
-      state: state,
-      zip: zip,
-      make: make,
-      model: model,
-      year: year,
-      comments: comments
-  
-  
+    if(name.length < 5){
+        $(".error").text("have at least five characters");
+        return; 
     };
 
-    database.ref().push(newUser);
-
-  $("#name").val("");
-  $("#email").val("");
-  $("#phoneNumber").val("");
-  $("#address").val("");
-  $("#address2").val("");
-  $("#city").val("");
-  $("#state").val("");
-  $("#zip").val("");
-  $("#make").val("");
-  $("#model").val("");
-  $("#year").val("");
-  $("#comments").val("");
-
+    var newUser = {
+        
+        name: name,
+        email: email,
+        phone: phone,
+        address: address,
+        addressTwo: addressTwo,
+        city: city,
+        state: state,
+        zip: zip,
+        make: make,
+        model: model,
+        year: year,
+        comments: comments
+        
+        
+    };
+    
+    // database.ref().push(newUser);
+    
+    // $("#name").val("");
+    // $("#email").val("");
+    // $("#phoneNumber").val("");
+    // $("#address").val("");
+    // $("#address2").val("");
+    // $("#city").val("");
+    // $("#state").val("");
+    // $("#zip").val("");
+    // $("#make").val("");
+    // $("#model").val("");
+    // $("#year").val("");
+    // $("#comments").val("");
+    
+    
+ 
 
   });
 
@@ -97,3 +111,15 @@
 
 
   });
+
+  $(document).ready(function(){
+      $("#myForm").validate({
+
+        rules: {
+            name: "required",
+            email: "required",
+        }
+      })
+  });
+    
+    
