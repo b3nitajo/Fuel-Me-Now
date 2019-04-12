@@ -6,8 +6,15 @@ body {
 
 .container-2 {
     background-color: white;
-    margin: 200px;
+    margin: 20px 200px 200px 200px;
     padding: 25px;
     
+    
+}
+
+.logo {
+    padding: 20px;
+    margin-left: 30%;
+    margin-bottom: 100px;
     
 }
