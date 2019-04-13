@@ -4,12 +4,16 @@ body {
     background-size: cover;
 }
 
+.logo {
+  padding: 20px;
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+
 .container-2 {
     background-color: white;
     margin: 200px;
-    padding: 25px;
-    
-    
+    padding: 25px;  
 }
 
 .resultContainer{
@@ -17,19 +21,24 @@ body {
     margin: auto;
   }
 
-.results_0{
+  .confirmContainer{
+    width: 700px;
+    margin: auto;
+  }
+
+#results_0{
     border:2px solid #d16d1d;
     border-radius: 2px;
     margin-bottom: 10px;
   }
 
-  .results_1{
+  #results_1{
     border:2px solid #d16d1d;
     border-radius: 2px;
     margin-bottom: 10px;
   }
 
-  .results_2{
+  #results_2{
     border:2px solid #d16d1d;
     border-radius: 2px;
     margin-bottom: 10px;
@@ -43,4 +52,26 @@ body {
 .resultsHeader{
     color: #FFF;
     margin-bottom: 50px;
+}
+
+h1{
+  color: #FFF;
+}
+
+#mapOfStation{
+  border:2px solid #d16d1d;
+  width: 700px;
+  height: 500px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  background-color: #FFF;
+}
+
+#canceledOrderHeader{
+  color: #FFF;
+  font-size: 20px;
+}
+
+#confirmButton{
+  margin-right: 40px;
 }
