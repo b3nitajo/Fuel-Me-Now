@@ -13,9 +13,6 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
-    <!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
-    <!-- crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -29,10 +26,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
   crossorigin=""/>
-  
-  
-  
-  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- css stylesheet -->
   <link rel="stylesheet" href="assets/css/about.css">
   <title>Fuel me Now</title>
@@ -48,60 +43,33 @@
       </div>
   </div>
 
-  <div class="container">
-      <form>
-                <div class="form-group">
-                  <label for="address">Address</label>
-                  <input type="text" class="form-control" id="address" placeholder="1234 Main St">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="city">City</label>
-                    <input type="text" class="form-control" id="city">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="state">State</label>
-                    <input type="text" class="form-control" id="state">
-                    </select>
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="zip">Zip</label>
-                    <input type="text" class="form-control" id="zip">
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
-              </form>
-          </div>
-
-
-
-
-
-
+  
   <!-- Main Content-->
   <div class="container">
     <div class="row">
       <!-- About -->
       <div class="col-md-4">
-        <div class="pic">
-          <!-- data-toggle="modal" data-target="#aboutModalCenter"> -->
-          <img class="pic-img" src="assets/Images/pump_atstation.png">
-          <a href="user.html" class="pic-text">Our Story</a>
-        </div>
+          <!-- Link to open the modal -->
+          <div class="pic-container"> 
+            <p><a href="#about-modal" rel="modal:open">
+              <img class="pic-img" src="assets/Images/pump_atstation.png">
+              <p class="pic-text">Our Story</p>
+            </a></p>
+          </div>
       </div>
 
       <!-- Get Stated -->
       <div class="col-md-4">
-        <div class="pic" data-toggle="modal" data-target="#startModalCenter">
-          <img class="pic-img" src="assets/Images/orange_pump.png">
-          <p class="pic-text">Get Started</p>
+        <div class="pic-container">
+          <img class="pic-img" src="assets/Images/street_03.jpg">
+          <a href="user.html" class="pic-text">Get Started</a>
         </div>
       </div>
       <!-- Testimonial -->
       <div class="col-md-4">
-        <div class="pic" data-toggle="modal" data-target="#testModalCenter">
-          <img class="pic-img" src="assets/Images/street_03.jpg">
-          <p class="pic-text">Testimonials</p>
+        <div class="pic-container">
+          <img class="pic-img" src="assets/Images/orange_pump.png">
+          <a href="thankYou.html" class="pic-text">Testimonials</a>
         </div>
       </div>
     </div>
@@ -117,69 +85,20 @@ crossorigin=""></script>
 
 
 
-
-<!-- About Modal-->
-<!-- <div class="modal fade" id="aboutModalCenter" tabindex="-1" role="dialog" aria-labelledby="aboutModalCenterTitle" aria-hidden="true"> -->
-  <!-- <div class="modal-dialog modal-dialog-centered" role="document"> -->
-    <!-- <div class="modal-content"> -->
-      <!-- <div class="modal-header"> -->
-        <!-- <p class="modal-title" id="aboutModalCenterTitle">Our Story</p> -->
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-          <!-- <span aria-hidden="true">&times;</span> -->
-        <!-- </button> -->
-      <!-- </div> -->
-      <!-- <div class="aboutModalBody"> -->
-        <!-- Ever heard of UberEats or GrubHub. Well we are the delivery service for your vehicle. Never stress -->
-        <!-- about -->
-        <!-- having to stop for gas again. It is now as easy as entering your information and ordering your -->
-        <!-- ride some -->
-        <!-- fuel, we will take care of the rest. Initially we started as a group project for a coding bootcamp -->
-        <!-- assignment, and -->
-        <!-- now we are here for you to keep you on schedule. Never show up late to your appointments, and say -->
-        <!-- good-bye to the days of missing important events due to stopping for gas. Can you Fuel me now? -->
-      <!-- </div> -->
-      <!-- <div class="modal-footer"> -->
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </div> -->
-<!-- Get Started Modal -->
-<!-- <div class="modal fade" id="startModalCenter" tabindex="-1" role="dialog" aria-labelledby="startModalCenterTitle" aria-hidden="true"> -->
-  <!-- <div class="modal-dialog modal-dialog-centered" role="document"> -->
-    <!-- <div class="modal-content"> -->
-      <!-- <div class="modal-header"> -->
-        <!-- <p class="modal-title" id="startModalCenterTitle">Get Started</p> -->
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-          <!-- <span aria-hidden="true">&times;</span> -->
-        <!-- </button> -->
-      <!-- </div> -->
-      <!-- <div class="startModalBody"> -->
-      <!-- </div> -->
-      <!-- <div class="modal-footer"> -->
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </div> -->
-<!-- Testimonials Modal -->
-<!-- <div class="modal fade" id="testModalCenter" tabindex="-1" role="dialog" aria-labelledby="testModalCenterTitle" aria-hidden="true"> -->
-  <!-- <div class="modal-dialog modal-dialog-centered" role="document"> -->
-    <!-- <div class="modal-content"> -->
-      <!-- <div class="modal-header"> -->
-        <!-- <p class="modal-title" id="testModalCenterTitle">Testimonials</p> -->
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-          <!-- <span aria-hidden="true">&times;</span> -->
-        <!-- </button> -->
-      <!-- </div> -->
-      <!-- <div class="modal-body"> -->
-      <!-- </div> -->
-      <!-- <div class="modal-footer"> -->
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </div> -->
+<!-- Modal HTML embedded directly into document -->
+<div id="about-modal" class="modal">
+    <p> Ever heard of UberEats or GrubHub. Well we are the delivery service for your vehicle. Never stress
+        about
+        having to stop for gas again. It is now as easy as entering your information and ordering your
+        ride some
+        fuel, we will take care of the rest. Initially we started as a group project for a coding bootcamp
+        assignment, and
+        now we are here for you to keep you on schedule. Never show up late to your appointments, and say
+        good-bye to the days of missing important events due to stopping for gas. Can you Fuel me now?</p>
+    <a href="#" rel="modal:close">
+      <!-- <i class="fas fa-gas-pump"></i> -->
+    </a>
+  </div>
 
 
   <!-- Linking to our JavaScript file. -->
@@ -193,15 +112,13 @@ crossorigin=""></script>
   //   }
   // });
 
-  $(document).ready(function(){
-    $(".startButton").on("click", function(){
-      var createiFrame = $('<iframe>');
-        createiFrame.attr('src="thankYou.html"');
-     $("#startModalCenterTitle").append(createiFrame);
-    });
-  });
-  
-  </script>
+   </script>
+
+  <footer>
+    <div class="footer">
+      <h5> Copyright &copy; </h5> 
+    </div>
+  </footer>
 </body>
 
 </html>
