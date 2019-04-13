@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fuel Me Now</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="assets/css/reviews.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+        <body background="https://i.pinimg.com/originals/10/10/e8/1010e8923de1918ed49304462b5b41b3.jpg">
+    <div class="container">
+        <h1 class="header"><img src="assets/images/fuelMeNow.png" alt="logo" height="142" width="342"></h1>
+        <div class="wrapper">
+
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="header2">
+                <h1> Let us know about your experience</h1>
+            </div>
+            <div class="alert">Thank you, for your support!</div>
+            <form id="contactForm">
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                    <label>Would you reccomend this service to a friend?</label>
+                    <input type="text" name="rec" id="rec">
+                </p>
+                <p class="full">
+                    <label>Email Address</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+
+                <p class="full">
+                    <label>Comments</label>
+                    <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+            <div id="reviews" class="col-lg-6">
+            </div>
+
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+            <script src="assets/javascript/reviews.js"></script>
+</body>
+
+</html>
