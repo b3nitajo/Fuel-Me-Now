@@ -8,6 +8,14 @@
   <title>Order Results</title>
   <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+   <!-- css stylesheet -->
+   <link rel="stylesheet" href="assets/css/about.css">
+  
   <style>
   .container{
     width: 700px;
@@ -44,42 +52,54 @@
   <div class="container">
     <div class="results">
       <h2 id="resultsHeader">Sponsored Results</h2>
-        <div class="row" id="results_1">
-            <div class="col">
-                <img src="assets/images/placeholder.png" class="resultImages" alt="Gas Station">
-            </div>
-            <div class="col">
-              <div id="results_1_coName">QuickTrip</div>
-            </div>
-            <div class="col">
-              <div id="results_1_price">$2.25 - $3.25 Gal</div>
-              <div id="results_1_rating">*****</div>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Leaflet JS -->
+            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+          <!-- map -->
+          <div id="mapid"></div>
         </div>
-        <div class="row" id="results_2">
-            <div class="col">
-                <img src="assets/images/placeholder.png" class="resultImages" alt="Gas Station">
-            </div>
-            <div class="col">
-              <div id="results_2_coName">QuickTrip</div>
-            </div>
-            <div class="col">
-              <div id="results_2_price">$2.25 - $3.25 Gal</div>
-              <div id="results_2_rating">*****</div>
-            </div>
+        <div class="col-md-6">
+          <div class="row" id="results_1">
+              <div class="col">
+                  <img src="assets/images/placeholder.png" class="resultImages" alt="Gas Station">
+              </div>
+              <div class="col">
+                <div id="results_1_coName">QuickTrip</div>
+              </div>
+              <div class="col">
+                <div id="results_1_price">$2.25 - $3.25 Gal</div>
+                <div id="results_1_rating">*****</div>
+              </div>
+          </div>
+          <div class="row" id="results_2">
+              <div class="col">
+                  <img src="assets/images/placeholder.png" class="resultImages" alt="Gas Station">
+              </div>
+              <div class="col">
+                <div id="results_2_coName">QuickTrip</div>
+              </div>
+              <div class="col">
+                <div id="results_2_price">$2.25 - $3.25 Gal</div>
+                <div id="results_2_rating">*****</div>
+              </div>
+          </div>
+          <div class="row" id="results_3">
+              <div class="col">
+                  <img src="assets/images/placeholder.png" class="resultImages" alt="Gas Station">
+              </div>
+              <div class="col">
+                <div id="results_3_coName">QuickTrip</div>
+              </div>
+              <div class="col">
+                <div id="results_3_price">$2.25 - $3.25 Gal</div>
+                <div id="results_3_rating">*****</div>
+              </div>
+          </div>
         </div>
-        <div class="row" id="results_3">
-            <div class="col">
-                <img src="assets/images/placeholder.png" class="resultImages" alt="Gas Station">
-            </div>
-            <div class="col">
-              <div id="results_3_coName">QuickTrip</div>
-            </div>
-            <div class="col">
-              <div id="results_3_price">$2.25 - $3.25 Gal</div>
-              <div id="results_3_rating">*****</div>
-            </div>
-        </div>
+      </div>
     </div>         
   </div>
        
@@ -90,6 +110,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="assets/javascript/giftastic.js"></script> -->
     <script type="text/javascript">
+    <script type="text/javascript" src="assets/javascript/about.js"></script>
   
     </script>
 </body>

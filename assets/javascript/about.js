@@ -49,12 +49,3 @@ $("#submitButton").on("click", function(event) {
 
 });
 
-$("#fade").modal({
-  fadeDuration: 1000,
-  fadeDelay: 0.50
-});
-
-$("#custom-close").modal({
-  closeClass: 'icon-remove',
-  closeText: '!'
-});
