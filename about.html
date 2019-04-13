@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- reset css -->
+  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap links -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="assets/css/about.css">
+  <title>Fuel me Now</title>
+</head>
+
+<body>
+
+  <!-- Logo Header -->
+  <div class="container">
+      <div class="logo">
+        <img src="assets/Images/fuelmenow.png" width="350px" height="100px" class="d-inline-block align-top"
+          alt="">
+      </div>
+  </div>
+
+  
+  
+  <!-- Main Content-->
+  <div class="container">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4">
+          <!-- Link to open the modal -->
+          <div class="pic-container"> 
+            <p><a href="#about-modal" rel="modal:open" style="color: #d16d1d;">
+              <img class="pic-img" src="assets/Images/pump_atstation.png">
+              <p class="pic-text">Our Story</p>
+            </a></p>
+          </div>
+      </div>
+      <!-- Get Stated -->
+      <div class="col-md-4">
+        <div class="pic-container">
+          <img class="pic-img" src="assets/Images/street_03.jpg">
+          <a href="user.html" class="pic-text">Get Started</a>
+        </div>
+      </div>
+      <!-- Testimonial -->
+      <div class="col-md-4">
+        <div class="pic-container">
+          <img class="pic-img" src="assets/Images/orange_pump.png">
+          <a href="reviews.html" class="pic-text">Testimonials</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="push"></div>
+
+
+
+<!-- Modal HTML embedded directly into document -->
+<div id="about-modal" class="modal">
+  <p> Ever heard of UberEats or GrubHub? Well we are the delivery service for your vehicle. Never stress
+    about having to stop for gas again. It is now as easy as entering your information and ordering your
+    ride some fuel, we will take care of the rest. Initially we started as a group project for a 
+    coding bootcamp assignment, and now we are here for you to keep you on schedule. Never show up late 
+    to your appointments, and say good-bye to the days of missing important events due to stopping for gas. 
+    Can you Fuel me now?</p>
+    <a href="#" rel="modal:close">
+     
+    </a>
+  </div>
+
+
+  <!-- Linking to our JavaScript file. -->
+  <script type="text/javascript" src="assets/javascript/about.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <footer>
+    <div class="footer">
+      <h5> Copyright &copy; </h5> 
+    </div>
+  </footer>
+</body>
+
+</html>
