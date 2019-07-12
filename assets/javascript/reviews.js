@@ -1,6 +1,6 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-    apiKey: "AIzaSyA5oSCSJdA531stK6XGG2OvP94R_3tA6RQ",
+    apiKey: "",
     authDomain: "fuel-me-now-accd9.firebaseapp.com",
     databaseURL: "https://fuel-me-now-accd9.firebaseio.com",
     projectId: "fuel-me-now-accd9",
